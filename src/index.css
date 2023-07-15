@@ -14,10 +14,10 @@ code {
 
 /* Webfont: Mak-Light */@font-face {
   font-family: 'MakLight';
-  src: url('./fonts/MAK.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/MAK.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/MAK.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('/fonts/MAK.eot'); /*IE9 Compat Modes*/
+  src: url('/fonts/MAK.eot?#iefix') format('embedded-opentype'), /*IE6-IE8*/
+       url('/fonts/MAK.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/MAK.otf') format('truetype'); /* Safari, Android, iOS */
            font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
