@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://www.stealthiswebsite.art/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="color-scheme" content="light dark">
+  <!--
+    The color-scheme meta tag sets the color-scheme property of the page.
+    For a page like this one, without any style tag or style sheet, that means the browser gives us a color scheme based on your browser preferences!
+  -->
+  <title>Steal This Website</title>
+  <meta name="description" content="An art project about the web platform. Also, a useful reference for many features of the web.">
+  <!-- TODO: Set up the social media preview meta tags. -->
+  <!-- A TODO is a message intended for the developer to let them know they left something undone, but want to come back to it. -->
+</head>
+
+<body style="pointer-events: auto;">
+  <style>
+    body:not(a){
+      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=225044'), default;
+      background-color: lightgreen;
+      color: #000;
+      font-family: 'druk', sans-serif, monospace;
+      display: grid;
+
+    }
+    body p:first-of-type:not(#menu){
+      background-color: #ccc;
+      border-bottom: dashed white 4px;
+      margin: 0;
+      padding: .5rem;
+    }
+    body h2:first-of-type{
+      background-color: #ccc;
+      margin: 0;
+      padding: .5rem;
+    }
+ 
+    h1{
+      color: transparent;
+      background-color: white;
+      background-image: linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  margin: 0;
+
+    }
+  
+    a{
+      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=33807'), pointer;
+      color: darkgreen;
+
+    }  
+    ol{
+      background-color: #3EB0FC;
+      margin-bottom: 0;
+    } 
+    nav, nav > h2, body h2#menu{
+      background-color: #3EB0FC;
+    } 
+    #menu{
+      margin-top: 0;
+    }
+
+   nav{
+    background: url('https://img.freepik.com/free-vector/flat-design-pixel-art-cloud-illustration_23-2150233228.jpg?t=st=1739632111~exp=1739635711~hmac=780908e2d18890d05ac4ca1b0abad78671ca9ad8e6225dc55211b2f669992662&w=1060');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+   }
+
+  </style>
+<h1>Steal This Website</h1>
+<p>
+  This website is a series of examples of web technologies all done as a single
+  page with detailed comments, so you can <strong>Steal This Website</strong>.
+</p>
+<h2>How to Use</h2>
+<p style="pointer-events: auto;">
+  Due to the stripped down nature of this website, it is not intended for complete beginners.
+  If you want a gentle introduction to HTML (and thus the skill set you need to effectively <strong>Steal This Website</strong>),
+  check out <a href="https://htmlforpeople.com/">HTML for People</a>.
+</p>
+<p>
+  To use, open the dev tools in your browser
+  (<a href="https://firefox-source-docs.mozilla.org/devtools-user/">Firefox instructions</a>)
+  and examine the source files.
+  Each feature will be well detailed with html comments.
+</p>
+<p>
+  You can usually view the source of a page by using the context menu
+  (the menu that pops up when you right-click with a mouse)
+  and using the "View source" option or similar.
+</p>
+<p>They look like this:</p>
+<blockquote>&lt;!-- This is a comment --&gt;</blockquote>
+<!-- This is what a comment looks like in the source. -->
+<h2>Why is this page so plain?</h2>
+<p>
+  This page is intentionally without styles.
+  You should learn what your browser defaults are.
+  They're usually pretty good! (They may not support dark mode by default, though.)
+</p>
+<h2>License and Use</h2>
+<p style="pointer-events: auto;">
+  All content on this website is licensed <a href="https://creativecommons.org/public-domain/cc0/">CC0</a> unless otherwise stated on the page in question.
+  It is intended that you may take such content from this website to adapt for your own work without permission or royalty.
+</p>
+<ul>
+  <li><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode.en">Legal License</a></li>
+  <li><a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1">Plain English</a></li>
+</ul>
+<h2>Indie Web</h2>
+<p>
+  Want to share this website with others?
+  Use the following markup on your page!
+  Make sure to update the image source to point at a copy of the badge on your own website.
+</p>
+<a href="https://www.stealthiswebsite.art/"><img src="./img/steal-this-website.png" height="31" width="88"></a>
+<div><pre>&lt;a href="https://www.stealthiswebsite.art"&gt;&lt;img src="steal-this-website.png" width="31" height="88"&gt;&lt;/a&gt;</pre></div>
+<p>To use:</p>
+<ol>
+  <li>Right click and download the <strong>Steal This Website</strong> badge image.</li>
+  <li>Add the image to your website.</li>
+  <li>Copy the html snippet above.</li>
+  <li>Paste the snippet into one of your web pages.</li>
+  <li>Edit the src attribute of the img tag to point at the copy of the badge you added previously.</li>
+</ol>
+<nav>
+  <!--
+    The nav element is just a block level element that tells a system that it contains a navigation element.
+    Things like a site map should be nav elements.
+  -->
+  <h2 id="menu">Menu</h2>
+  <ul>
+    <li>
+      <a href="https://www.stealthiswebsite.art/">Home Page (This page!)</a>
+    </li>
+    <li>
+      <a href="https://www.stealthiswebsite.art/demos/single-column.html">Steal this single column layout.</a>
+    </li>
+    <li>
+      <a href="https://www.stealthiswebsite.art/demos/flexbox-focus.html">Steal this Flexbox based Card layout.</a>
+    </li>
+    <li>
+      <a href="https://www.stealthiswebsite.art/demos/basic-grid.html">Steal this classic three column layout.</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div id="cb-connect-sidebar-main"><div id="cb-connect-sidebar"><a href="https://www.stealthiswebsite.art/#" class="cb-connect-close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path fill-rule="evenodd" d="M3.3352346,13.1409137 L3.33523455,13.1409138 C2.91548014,13.5733825 2.92546046,14.2645641 3.35752584,14.684707 C3.78087294,15.0963751 4.45458199,15.0962796 4.87780976,14.6844919 L9.00453522,10.5538595 L13.1373639,14.6904917 L13.1373638,14.6904917 C13.568947,15.1110906 14.2594594,15.1018597 14.6796682,14.6698737 C15.0920236,14.2459591 15.0919517,13.570408 14.6795052,13.1465834 L10.5469491,9.01016937 L14.6955806,4.85777412 L14.6955806,4.85777409 C15.1130468,4.423134 15.0994531,3.73205118 14.6652183,3.31419357 C14.2430237,2.90792372 13.5756331,2.90792372 13.1534407,3.31419361 L9.00453675,7.46620706 L4.86206292,3.31981159 L4.86206295,3.31981162 C4.436122,2.89342832 3.74549844,2.89339123 3.31951335,3.31972975 C2.89352771,3.74606833 2.89349066,4.43733659 3.31943155,4.86371935 L7.46206886,9.01011482 L3.3352346,13.1409137 Z" fill=""></path></svg></a><div id="cb-connect-sidebar-loading">
+        <div>
+          <div class="cb-connect-sidebar-loading-outer">
+            <div class="cb-connect-sidebar-loading-inner">
+              <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/src/assets/logo.svg" width="40" height="40">
+              <div class="cb-connect-sidebar-loading-inner-text">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div><div><iframe id="cb-connect-sidebar-iframe" lang="en" class="cb-connect-sidebar-container" style="height: 100vh; min-height: 100vh" src="./Steal This Website_files/saved_resource.html"></iframe></div></div><div id="cb-connect-open-button-outer" class="cb-connect-open-button-is-tucked" style="inset: 64px 0px auto auto;"><div id="cb-connect-open-button-inner" style="background: rgb(20, 140, 252);">
+          <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/src/assets/logo-dark-background.svg" width="20" height="20" style="user-select: none;width: 20px !important;height:20px !important;filter: none !important;">
+
+          <div id="cb-connect-open-button-icp-message" style="display: none;">ICP</div>
+        <div id="cb-connect-open-button-move-button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4 12.5V11h12v1.5ZM4 9V7.5h12V9Z"></path></svg></div><a href="https://www.stealthiswebsite.art/#" id="cb-connect-close-widget-button" title="Hide widget on this site or all sites"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path fill-rule="evenodd" d="M3.3352346,13.1409137 L3.33523455,13.1409138 C2.91548014,13.5733825 2.92546046,14.2645641 3.35752584,14.684707 C3.78087294,15.0963751 4.45458199,15.0962796 4.87780976,14.6844919 L9.00453522,10.5538595 L13.1373639,14.6904917 L13.1373638,14.6904917 C13.568947,15.1110906 14.2594594,15.1018597 14.6796682,14.6698737 C15.0920236,14.2459591 15.0919517,13.570408 14.6795052,13.1465834 L10.5469491,9.01016937 L14.6955806,4.85777412 L14.6955806,4.85777409 C15.1130468,4.423134 15.0994531,3.73205118 14.6652183,3.31419357 C14.2430237,2.90792372 13.5756331,2.90792372 13.1534407,3.31419361 L9.00453675,7.46620706 L4.86206292,3.31981159 L4.86206295,3.31981162 C4.436122,2.89342832 3.74549844,2.89339123 3.31951335,3.31972975 C2.89352771,3.74606833 2.89349066,4.43733659 3.31943155,4.86371935 L7.46206886,9.01011482 L3.3352346,13.1409137 Z" fill=""></path></svg></a></div></div></div></body></html>
+
+   
