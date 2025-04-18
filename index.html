@@ -1,84 +1,441 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033)https://www.stealthiswebsite.art/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="color-scheme" content="light dark">
-  <!--
-    The color-scheme meta tag sets the color-scheme property of the page.
-    For a page like this one, without any style tag or style sheet, that means the browser gives us a color scheme based on your browser preferences!
-  -->
-  <title>Console critter</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>split image</title>
 </head>
 
-<body style="pointer-events: auto;">
-<!--  ascii art from here: https://emojicombos.com/sleeping-ascii-art -->
-<div id="creature">
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠾⠷⠲⢾⡿⠂⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠋⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠶⠶⢶⣶⠆⣰⣿⣁⣀⣀⣀⣀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣞⠁⠀⠉⠉⠉⠉⠉⠉⠉⠁⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣠⣄⣀⣀⣀⡀⠸⠿⠷⠾⠶⠶⠆⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣴⠿⠛⠉⠉⠉⠁⠈⠉⠉⠉⠛⠻⢶⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢀⣴⠾⠛⣽⡟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠙⠳⣦⣀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢠⡾⠃⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀
-⠀⠀⠀⠀⢀⣾⠁⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⢁⠀⠀⠀
-⠀⠀⠀⢀⡾⠁⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡄⠀⠀⠘⡆⠀⠀
-⠀⠀⣰⡿⠁⠀⣼⡇⠀⠀⢶⣀⣀⣀⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⣦⣀⣀⣠⡴⠀⠀⠸⣷⠀⠈⣿⠀⠀⠀
-⠀⣼⠏⠀⠀⠀⢿⡆⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀⠀⣤⣤⡀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⢰⡿⠀⠀⠀⠱⣦⡀
-⢰⡏⠀⠀⠀⠀⠈⢿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⣼⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀⠀⢹⣞
-⢸⣇⠀⠀⠀⠀⠀⠀⠙⠻⣶⣤⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣤⣤⣶⠟⠋⠀⠀⠀⠀⠀⠀⢹⡇
-⠀⢻⣆⡀⠀⠀⠀⠀⣠⡾⠏⠀⠈⠉⠉⠉⠛⠙⠛⠛⠋⠛⠙⠋⠉⠉⠉⠁⠀⠙⢷⣄⡀⠀⠀⠀⢀⣠⡿⠀
-⠀⠀⠈⠛⠛⠞⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠾⠛⠛⠉⠀⠀
-
-</div>
-<div id="prompt">
-    say hello() to your digital penpal
-</div>
-</body>
-
 <style>
-    #creature{
-        font-family: monospace;
-        white-space: pre;
+    body {
+        height: 100svh;
+        width: 100svw;
+        overflow: hidden;
+        margin: 0
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100svh;
+        /* From https://css.glass */
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3000;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    .overlay-inner-c {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    button.close-overlay {
+        background-color: transparent;
+        border: solid 2px #ffffff;
+        color: #fff;
+        padding: 16px 18px;
+        width: 100%;
+        margin: 1.25rem 0;
+    }
+
+    button.close-overlay:hover {
+        background-color: #fff;
+        color: #092198;
+        cursor: pointer;
+    }
+
+
+    /* side menu */
+
+    .menu {
+        background-color: #09219860;
+        z-index: 10;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100svh;
+        max-width: 300px;
+        width: 2.5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-flow: column nowrap;
+
+
+    }
+
+    .menu button:not(.hint-text) {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        position: absolute;
+        top: 1.2em;
+        right: .25em;
+
+    }
+
+    .close-menu {
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+
+    /* hint */
+
+
+    img.small-version {
+        width: 70%;
+        min-width: 100px;
+        height: auto;
+    }
+
+    .hint-viewport {
+        visibility: hidden;
+        width: 70%;
+        margin: 0 auto;
+        display: none;
+        text-align: center;
+    }
+
+    button.hint-text {
+        background-color: transparent;
+        border: solid 2px #ffffff;
+        color: #fff;
+        padding: 16px 18px;
+        width: 70%;
+        margin: 1.25rem auto;
         display: none;
     }
+
+    button.hint-text:hover {
+        background-color: #fff;
+        color: #092198;
+        cursor: pointer;
+    }
+
+
+
+
+
+    /* right slider styling */
+    .environment {
+        display: flex;
+        gap: 0;
+        /* height: 100%;
+        width: 100%; */
+    }
+
+    .left-slider,
+    .right-slider {
+        position: relative;
+        height: 100svh;
+        width: 50%;
+    }
+
+    .slider-viewport {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%);
+    }
+
+
+
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 2.15rem 0;
+        display: flex;
+        justify-content: center;
+        will-change: transform;
+        background-color: #fff;
+    }
+
+    .slide.start {
+        align-items: flex-start;
+    }
+
+    .slide.center {
+        align-items: center;
+    }
+
+    .slide.end {
+        align-items: flex-end;
+    }
+
+    .img-c {
+        position: relative;
+        aspect-ratio: 1/2;
+        will-change: transform;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-c img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        max-height: 300px;
+        width: 100%;
+        object-fit: contain;
+
+    }
+
+    .img-c.right img {
+        object-position: left center;
+    }
+
+    .img-c.left img {
+        object-position: right center;
+    }
+
+
+    h1.head {
+        position: fixed;
+        transform-origin: top left;
+        rotate: -90deg;
+        top: 50%;
+        left: 0;
+        z-index: 921;
+    }
 </style>
-  
-<script>
-    const creature = document.getElementById('creature');
-    const prompt = document.getElementById('prompt');
 
-    function hello(val){
-        if (val === "hello" || val === 'hi'){
-            alert(`hello user one, it is ${new Date().toLocaleTimeString()} where you are`)
-            prompt.innerHTML = 'try to ask me about my day()'
-        }else{
-            console.log('you may have to say it twice, try again')
-        }
-    }
-    function day(){
-        let options = [
-            'my day was great!',
-            `it's been...a day`, 
-            `my day is getting better thanks to you :)`
-        ]
-        alert(options[Math.floor(options.length * Math.random())]); 
-        prompt.innerHTML= 'how rude of me, user one, i forgot to ask about your day. how yourDay() is going?'
-    }
+<body>
+    <div class="overlay">
+        <div class="overlay-inner-c">
+            <p class="overlay-text">
+                scroll to align objects or create new combinations from the miscellaneous objects on my bookself.
+            </p>
+            <button class="close-overlay" onclick="toggleOverlay()">
+                start experience
+            </button>
 
-    function yourDay(val){
-        prompt.innerHTML= 'I am getting quite tired, user one. Do you mind letting me rest()';
-        if (val && val.length > 0 && val.includes('good')){
-          alert(`I'm happy to hear that!`)
-        }else{
-            alert(`I only hope it gets better with time`)
-        }
-    }
-    function rest(){
-        alert(`zzzzzz`)
-        prompt.innerHTML = 'zzzzz'
-        creature.style.display = 'block'
-    }
+        </div>
+
+    </div>
+
+    <h1 class="head">
+        object randomizer 1.0
+    </h1>
+
+    <div class="menu" id="sidebar">
+        <div class="show-menu">
+            <button class="hamburglar" onclick="updateMenuBtn(true)">
+                <!-- icon from feather icons -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <button class="close-menu" onclick="updateMenuBtn(false)">
+                <!-- icon from feather icons -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="hint-viewport">
+            <img id="hint-pic" class="small-version" src="placeholder.jpg">
+        </div>
+        <button class="hint-text" onclick="toggleHint()">
+            need a hint?
+        </button>
+
+    </div>
+
+    <div class="environment">
+
+        <div class="left-slider">
+            <div class="slider-viewport-left">
+                <div class="slide slide-l start"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"> </div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l center"></div>
+                <div class="slide slide-l end"></div>
+            </div>
+        </div>
+        <div class="right-slider">
+            <div class="slider-viewport-right">
+                <div class="slide slide-r start"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"> </div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r center"></div>
+                <div class="slide slide-r end"></div>
+            </div>
+        </div>
+        <script>
+            let overlay = true;
+            const overlayEl = document.querySelector('.overlay')
+
+            function toggleOverlay() {
+                if (overlayEl) {
+                    if (overlay === true) {
+                        overlay = false;
+                        overlayEl.style.display = 'none';
+
+                    } else {
+                        overlay = true;
+                        overlayEl.style.display = 'block';
+                    }
+                }
+
+            }
 
 
-</script>
+            // fix this toggle 
+
+            function updateMenuBtn(state) {
+                let visible = state;
+                const hamburglarMenu = document.querySelector('.hamburglar');
+                const closeMenu = document.querySelector('.close-menu');
+                const nav = document.getElementById('sidebar')
+
+                if (hamburglarMenu && closeMenu) {
+                    if (visible === true) {
+                        visible = false;
+                        hamburglarMenu.style.visibility = 'hidden';
+                        closeMenu.style.visibility = 'visible';
+                        nav.style.width = '40%';
+                        if (window.innerWidth <= 500) {
+                            nav.style.width = '90%';
+                        }
+                        document.querySelector('.hint-text').style.display = 'block';
+                        document.querySelector('.hint-viewport').style.display = 'block';
+                    } else {
+                        visible = true;
+                        hamburglarMenu.style.visibility = 'visible';
+                        closeMenu.style.visibility = 'hidden';
+                        nav.style.width = '2.5rem';
+                        document.querySelector('.hint-text').style.display = 'none';
+                        document.querySelector('.hint-viewport').style.display = 'none';
+                    }
+                }
+            }
+
+            const imageFiles = [
+                { img: 'bluetooth', alt: 'Pink bluetooth headset' },
+                { img: 'candle', alt: 'Candle shaped like a dessert with a wax strawberry on top' },
+                { img: 'candy', alt: 'Rendez vous candy container' },
+                { img: 'duckies', alt: 'Two minature rubber ducks with four leaf clovers' },
+                { img: 'hand', alt: 'A plastic mini hand pencil topper' },
+                { img: 'heart', alt: 'Heart-shaped doilies' },
+                { img: 'jomo', alt: 'Pink and white trucker hat with blue writing saying Joy of Missing Out' },
+                { img: 'mag', alt: 'Old issue of Jet from the early aughts featuring Ciara' },
+                { img: 'magic8', alt: 'Magic 8 ball shaped photo holder' },
+                { img: 'nails', alt: 'Essie nail polish in pink' },
+                { img: 'sew', alt: 'A sewing tomato' },
+                { img: 'stickers', alt: 'A sticker with an illustriative heart' },
+                { img: 'swoosh', alt: 'A nike swoosh shaped whistle' },
+                { img: 'tape', alt: 'Guy self-titled album on tape' },
+                { img: 'bluetooth', alt: 'Pink bluetooth headset' },
+                { img: 'candle', alt: 'Candle shaped like a dessert with a wax strawberry on top' },
+                { img: 'candy', alt: 'Rendez vous candy container' },
+                { img: 'duckies', alt: 'Two minature rubber ducks with four leaf clovers' },
+                { img: 'hand', alt: 'A plastic mini hand pencil topper' },
+                { img: 'heart', alt: 'Heart-shaped doilies' },
+                { img: 'jomo', alt: 'Pink and white trucker hat with blue writing saying Joy of Missing Out' },
+                { img: 'mag', alt: 'Old issue of Jet from the early aughts featuring Ciara' },
+                { img: 'magic8', alt: 'Magic 8 ball shaped photo holder' },
+                { img: 'nails', alt: 'Essie nail polish in pink' },
+                { img: 'sew', alt: 'A sewing tomato' },
+                { img: 'stickers', alt: 'A sticker with an illustriative heart' },
+                { img: 'swoosh', alt: 'A nike swoosh shaped whistle' },
+                { img: 'tape', alt: 'Guy self-titled album on tape' }
+            ]
+
+
+            function selectRandomHint() {
+                let randomSrc = Math.floor(Math.random() * imageFiles.length)
+                const targetHint = document.getElementById('hint-pic');
+                targetHint.src = `./assets/smalls/${imageFiles[randomSrc].img}.png`;
+                targetHint.alt = `${imageFiles[randomSrc].alt}`
+            }
+            selectRandomHint()
+
+            let hintVisible = false;
+            const hint = document.querySelector('.hint-viewport');
+            const hintBtn = document.querySelector('.hint-text');
+
+            function toggleHint() {
+                if (hint) {
+                    if (hintVisible === true) {
+                        selectRandomHint();
+                        hintVisible = false;
+                        hint.style.visibility = 'hidden';
+                        hintBtn.innerHTML = 'show hint';
+
+                    } else {
+                        selectRandomHint();
+                        hintVisible = true;
+                        hint.style.visibility = 'visible';
+                        hintBtn.innerHTML = 'hide hint';
+
+
+                    }
+                }
+
+            }
+        </script>
+        <script type="module" src="./script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
